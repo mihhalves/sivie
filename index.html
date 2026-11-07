@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SIVIE — moda feminina com autenticidade. Compre pelo WhatsApp." />
+    <title>SIVIE — Vista sua essência</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement">ATENDIMENTO PERSONALIZADO <a href="#colecao">• VER COLEÇÃO</a></div>
+    <header class="header">
+      <a class="logo" href="#inicio" aria-label="SIVIE, início">Si<span>v</span>ie</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" class="nav" aria-label="Navegação principal">
+        <a href="#colecao">Coleção</a>
+        <a href="#essencia">A marca</a>
+        <a class="nav-whatsapp" data-whatsapp="Quero falar com a SIVIE" href="#">WhatsApp <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">NOVA SELEÇÃO</p>
+          <h1>Vista-se de <em>presença.</em></h1>
+          <p class="hero-text">Peças para acompanhar a sua rotina, o seu ritmo e tudo o que faz você se sentir viva.</p>
+          <a class="button button-dark" href="#colecao">Conheça a coleção <span>→</span></a>
+        </div>
+        <div class="hero-image-wrap"><img src="assets/catalogo/sivie-079.jpeg" alt="Modelo vestindo conjunto rosa SIVIE" /></div>
+        <p class="hero-note">SIVIE<br /><span>ESTILO QUE HABITA</span></p>
+      </section>
+
+      <section class="promise" aria-label="Diferenciais SIVIE">
+        <div><span>01</span><p>Peças escolhidas<br />com intenção</p></div>
+        <div><span>02</span><p>Atendimento humano<br />pelo WhatsApp</p></div>
+        <div><span>03</span><p>Entrega para<br />todo o Brasil</p></div>
+      </section>
+
+      <section id="colecao" class="collection section">
+        <div class="section-heading">
+          <div><p class="eyebrow">COLEÇÃO SIVIE</p><h2>Escolhas para<br /><em>viver bem.</em></h2></div>
+          <p class="section-intro">Selecione seu look favorito e fale com a gente para consultar cores, tamanhos e disponibilidade.</p>
+        </div>
+        <div id="product-grid" class="product-grid" aria-live="polite"></div>
+        <div class="center"><button id="show-more" class="text-button">Ver mais da coleção <span>↓</span></button></div>
+      </section>
+
+      <section id="essencia" class="manifesto">
+        <div class="manifesto-image"><img src="assets/catalogo/sivie-002.jpeg" alt="Modelo com conjunto cinza SIVIE" loading="lazy" /></div>
+        <div class="manifesto-copy"><p class="eyebrow">NOSSA ESSÊNCIA</p><h2>“Si”, de Sintia.<br />“Vie”, de <em>vida.</em></h2><p>A SIVIE nasce para vestir mulheres com identidade, força e sensibilidade. Acreditamos em roupas que não ditam quem você é — elas deixam isso ainda mais visível.</p><a class="text-link" data-whatsapp="Quero conhecer mais sobre a SIVIE" href="#">Falar com a SIVIE <span>→</span></a></div>
+      </section>
+
+      <section class="editorial section">
+        <div class="editorial-copy"><p class="eyebrow">SIVIE EM MOVIMENTO</p><h2>Seu estilo, seu<br /><em>momento.</em></h2><a class="button button-light" data-whatsapp="Quero receber novidades da SIVIE" href="#">Quero novidades <span>↗</span></a></div>
+        <img src="assets/catalogo/sivie-037.jpeg" alt="Look SIVIE em tons neutros" loading="lazy" />
+      </section>
+    </main>
+
+    <footer class="footer"><a class="logo" href="#inicio">Si<span>v</span>ie</a><p>Moda com identidade.</p><a data-whatsapp="Olá, quero atendimento da SIVIE" href="#">+55 11 96744-3239</a><p class="copyright">© <span id="year"></span> SIVIE. Todos os direitos reservados.</p></footer>
+    <a class="floating-whatsapp" data-whatsapp="Olá, quero atendimento da SIVIE" href="#" aria-label="Falar com a SIVIE pelo WhatsApp"><span>◔</span> WhatsApp</a>
+    <script src="app.js"></script>
+  </body>
+</html>
