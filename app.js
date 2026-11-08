@@ -59,4 +59,8 @@ document.querySelector('.menu').onclick = event => { const nav = document.queryS
 // Link nativo: abre sem depender de pop-ups, inclusive no GitHub Pages.
 document.querySelectorAll('[data-whatsapp]').forEach(link => { link.href = whatsapp(link.dataset.whatsapp); });
 document.querySelector('#year').textContent = new Date().getFullYear();
+// Em telas pequenas, o CTA fica abaixo da foto sem ser cortado pelo card.
+const mobileCardStyles = document.createElement('style');
+mobileCardStyles.textContent = '@media (max-width:760px){.photo{aspect-ratio:auto!important;overflow:visible!important}.photo img{display:block!important;height:auto!important;aspect-ratio:3/4!important}.photo .add{display:block!important;position:static!important;transform:none!important;width:100%!important;margin-top:8px!important;background:#272522!important;color:#fff!important;padding:12px 8px!important}}';
+document.head.append(mobileCardStyles);
 render(); updateBag();
